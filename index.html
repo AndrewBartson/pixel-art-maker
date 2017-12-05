@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pixel Art Maker</title>
+
+  <style>
+  .canvas > div:nth-child(odd) {
+
+  }
+  .canvas > div {
+    background: #ddd;
+    height: 22px;
+    width: 22px;
+    border: 1px solid black;
+  }
+  .pallette > div {
+    background: #ddd;
+    height: 18px;
+    width: 18px;
+    border: 1px solid black;
+  }
+  .dashboard > div {
+    height: 45px;
+    width: 358px;
+    border: 1px solid black;
+  }
+  .canvas, .pallette, .dashboard {
+    box-sizing: border-box;
+    margin: auto;
+    display: grid;
+  }
+  .container > .canvas {
+    width: 864px;
+    grid-template-columns: repeat(36, 1fr);
+  }
+  .container > .pallette {
+    width: 720px;
+    grid-template-columns: repeat(36, 1fr);
+  }
+  .container > .dashboard {
+    width: 360px;
+    grid-template-columns: 1fr;
+  }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="canvas">
+
+    </div>
+    <div class="pallette">
+
+    </div>
+    <div class="dashboard">
+      <div>
+        <h1>Current Color</h1>
+
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="pixel.js">
+
+</script>
+</body>
+</html>
